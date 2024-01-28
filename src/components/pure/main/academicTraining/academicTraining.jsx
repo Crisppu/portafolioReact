@@ -54,7 +54,9 @@ const AcademicTraining = () => {
                         (
                             <React.Fragment key={index}>
                                 <div  className={`main__academicTraining__card main__academicTraining__${card.name}`}
-                                style={toggleBackground &&  index === active ? {animation:'animationOpacity 0.9s cubic-bezier(0.390,0.575,0.565,1.000) both', backgroundColor:'#35363B',backgroundImage:'initial'}:{backgroundImage:`${card.backgroundImgCampus}`}
+                                style={toggleBackground &&  index === active ?
+                                {animation:'animationOpacity 0.9s cubic-bezier(0.390,0.575,0.565,1.000) both', backgroundColor:'#35363B',backgroundImage:'initial'}:
+                                {backgroundImage:card.backgroundImgCampus}
                                 }
                                  onMouseOver={()=>eventCardAnimation(index)} onMouseOut={()=>eventCardAnimation(null)}>
                                     {
