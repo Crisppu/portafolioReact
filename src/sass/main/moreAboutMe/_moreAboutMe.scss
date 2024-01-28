@@ -1,0 +1,45 @@
+@use '../../tools/mixins/mixinBackgroundImage';
+
+.main__moreAboutMe {
+  @include mixinBackgroundImage.background-Image-moreAboutMe('../../../../src/assets/img/areaTrabajo.webp');
+  height: 82vh; // 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-span80);
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+
+  &__buttonCv {
+    padding: 1.5rem 3rem;
+    letter-spacing: 0.0938rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-black);
+    background-color: var(--color-softGray); //gris transparente
+    opacity: 0.6;
+    border: 2px solid var(--color-white);
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    &:hover{
+      background-color: var(--color-pastelGreen);
+      box-shadow: 0px 15px 20px var(--color-darkGreen);
+      color: var(--color-white);
+      transform: translateY(-7px);
+      opacity:initial;
+    }
+    &:active{
+      transform: translateY(-1px);
+
+    }
+  }
+}

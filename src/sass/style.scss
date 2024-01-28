@@ -1,0 +1,19 @@
+@use'../sass/app/app';
+@use'../sass/specializationDetail/specializationDetail';
+//header
+@use '../sass/header/header';
+@use '../sass/header/logo';
+@use '../sass/header/navBar';
+//banner
+@use '../sass/banner/banner';
+@use'../sass/banner/presentation';
+
+//main
+@use '../sass/main/aboutMe/aboutMe.scss';
+@use '../sass/main/moreAboutMe/moreAboutMe';
+@use'../sass/main/skills/skills.scss';
+@use'../sass/main/academicTraining/academicTraining';
+@use '../sass/main/professionalExperience/professionalExperience';
+@use '../sass/main/contact/contact.scss';
+//footer
+@use '../sass/footer/footer.scss'

@@ -1,0 +1,172 @@
+.banner__presentation {
+
+  &__recognition {
+    width: 60vw;
+  }
+
+  &__greeting {
+    // font-size: 48px;
+    font-size: var(--font-size-h1);
+    text-align: center;
+    line-height: 3.125rem;
+    font-family: var(--font-family-zen);
+    font-weight: 800;
+  }
+
+  &__university {
+    font-size: var(--font-size-h4);
+    text-align: center;
+    letter-spacing: 0.125rem;
+    line-height: 1.875rem;
+    font-family: var(--font-family-montserrat);
+  }
+
+  &__list {
+    display: inline-flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 3.125rem;
+    font-family: var(--font-family-montserrat);
+  }
+
+  &__itemIcono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: var(--color-white);
+    margin: 0.625rem;
+
+    border-radius: 50%;
+    width: 4vw; //55px
+    height: 7.5vh; //50px
+    //animacion
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+
+    //al posicionarse por encimad de icono mostrar la parte de arriba
+    &:hover{
+      .banner__presentation__titleIcono{
+        top:-2.8125rem;
+        opacity: 1;
+        visibility: visible;
+        position: auto;
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+        font-weight: 600;
+
+      }
+    }
+    //cambiar de colores el texto y background
+    &__activeFacebook{
+      &:hover,
+      &:hover .banner__presentation__titleIcono,
+      &:hover .banner__presentation__titleIcono::before {
+        background: var(--color-blue-facebook);
+        color: var(--color-white);
+      }
+    }
+    &__activeTwitter{
+      &:hover,
+      &:hover .banner__presentation__titleIcono,
+      &:hover .banner__presentation__titleIcono::before {
+        background: var(--color-green-twitter);
+        color: var(--color-white);
+      }
+    }
+    &__activeInstagram{
+      &:hover,
+      &:hover .banner__presentation__titleIcono,
+      &:hover .banner__presentation__titleIcono::before {
+        background: var(--color-red-instagram);
+        color: var(--color-white);
+      }
+    }
+    &__activeLinkedin{
+      &:hover,
+      &:hover .banner__presentation__titleIcono,
+      &:hover .banner__presentation__titleIcono::before {
+        background: var(--color-blue-linkedin);
+        color: var(--color-white);
+      }
+    }
+    &__activeTikTok{
+        &:hover,
+        &:hover .banner__presentation__titleIcono,
+        &:hover .banner__presentation__titleIcono::before {
+          background: var(--color-black);
+          color: var(--color-white);
+        }
+    }
+
+  }
+
+
+  &__titleIcono {
+    position: absolute;
+    top: 0;
+    padding: 0.3125rem 0.5rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    //el cuadrado de abajo del titulo
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1vh;
+      width: 0.5vw;
+      background: var(--color-white);
+      bottom: -0.1875rem;
+      left: 50%;
+      transform: translate(-50%) rotate(45deg);
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  }
+
+}
+
+@media screen and (max-width:767px) {
+    .banner__presentation{
+
+        &__recognition {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        &__containerTitles{
+            width: 75%;
+        }
+        &__greeting {
+            font-size: 32px;
+        }
+        &__list{
+            height: 10vh;
+        }
+        &__itemIcono{
+            width: 15vw;
+        }
+        &__titleIcono{
+            display: none;
+        }
+    }
+}
+
+//tablet
+@media screen and (min-width:767px) and (max-width:1024px) {
+    .banner__presentation{
+        &__list{
+            padding-top: 10px;
+            height: 100%;
+        }
+        &__itemIcono{
+            height: 60px;
+            width: 60px;
+        }
+    }
+}

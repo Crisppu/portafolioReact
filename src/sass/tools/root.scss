@@ -1,0 +1,69 @@
+// @forward '../tools/color/colorPalette';
+// @forward '../tools/mixins/mixinTitulo';
+
+@use'../../sass/tools/color/colorPalette' ;
+@use'../../sass/tools/fonts/fontFamily';
+@use'../../sass/tools/fonts/fontSize';
+
+:root{
+    //color
+    --color-white:#{colorPalette.$color-white};
+    --color-black:#{colorPalette.$color-black};
+    --color-grey:#{colorPalette.$color-grey};
+    --color-softGray:#{colorPalette.$color-softGray};
+    --color-darkGray:#{colorPalette.$color-darkGray};
+
+    //form
+    --color-yellow:#{colorPalette.$color-yellow};
+    --color-pink:#{colorPalette.$color-pink};
+
+
+
+    //color iconos redes sociales
+    --color-blue-facebook:#{colorPalette.$color-blue-facebook};
+    --color-green-twitter:#{colorPalette.$color-green-twitter};
+    --color-red-instagram:#{colorPalette.$color-red-instagram};
+    --color-blue-linkedin:#{colorPalette.$color-blue-linkedin};
+
+
+    --color-red:#{colorPalette.$color-red};
+    --color-lightRed:#{colorPalette.$color-lightRed};
+
+    --color-pastelRed:#{colorPalette.$color-pastelRed};
+    --color-pastelBlue:#{colorPalette.$color-pastelBlue};
+    --color-pastelGreen:#{colorPalette.$color-pastelGreen};
+
+
+    // color dark
+    --color-darkRed:#{colorPalette.$color-darkRed};
+    --color-darkGreen:#{colorPalette.$color-darkGreen};
+    --color-darkBlue:#{colorPalette.$color-darkBlue};
+
+    //letter
+    --font-family-zen: #{fontFamily.$font-family-zen};
+    --font-family-zenKaku: #{fontFamily.$font-family-zenKaku};
+    --font-family-montserrat:#{fontFamily.$font-family-montserrat};
+    //tamaño letter
+    --font-size-logoCY:#{fontSize.$font-size-logoCY};
+    --font-size-h1:#{fontSize.$font-size-h1};
+    --font-size-h2:#{fontSize.$font-size-h2};
+    --font-size-h3:#{fontSize.$font-size-h3};
+    --font-size-h4:#{fontSize.$font-size-h4};
+    --font-size-h5:#{fontSize.$font-size-h5};
+    --font-size-h6:#{fontSize.$font-size-h6};
+
+    --font-size-p20:#{fontSize.$font-size-p20};
+    --font-size-p16:#{fontSize.$font-size-p16};
+    --font-size-p18:#{fontSize.$font-size-p18};
+
+    --font-size-span80: #{fontSize.$font-size-span80};
+    --font-size-span32: #{fontSize.$font-size-span32};
+    --font-size-span16: #{fontSize.$font-size-span16};
+
+    --font-size-a16: #{fontSize.$font-size-a16};
+    --font-size-a24: #{fontSize.$font-size-a24};
+
+
+
+
+}

@@ -1,0 +1,106 @@
+.main__skills {
+  background: var(--color-grey);
+  color: var(--color-black);
+  padding-bottom: 5rem;
+}
+.main__skills__title {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: var(--font-family-zen);
+  font-size: var(--font-size-h2);
+  font-weight: 800;
+}
+.main__skills__cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main__skills__card {
+  width: 18.5vw;
+  background-color: var(--color-white);
+  margin: 0.625rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+}
+.main__skills__containerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 22.5vh;
+}
+@keyframes rotateVertCenter {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+.main__skills__list {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem;
+}
+.main__skills__itemTitle {
+  text-align: center;
+  font-size: var(--font-size-h4);
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+}
+.main__skills__itemParagraph {
+  text-align: justify;
+  margin-top: 0.5rem;
+  font-size: var(--font-size-p16);
+  font-family: var(--font-family-montserrat);
+}
+.main__skills__itemLink a {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: var(--color-white);
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.25rem;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.main__skills__itemLink span {
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 767px) {
+  .main__skills__cardContainer {
+    flex-direction: column;
+    flex-wrap: initial;
+    align-items: center;
+  }
+  .main__skills__card {
+    width: 350px;
+  }
+  .main__skills__itemLink a {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .main__skills__cardContainer {
+    flex-direction: column;
+    flex-wrap: initial;
+    align-items: center;
+  }
+  .main__skills__containerImg {
+    height: 200px;
+  }
+  .main__skills__card {
+    width: 380px;
+  }
+  .main__skills__itemLink a {
+    height: 40px;
+  }
+}
+
+/*# sourceMappingURL=skills.css.map */

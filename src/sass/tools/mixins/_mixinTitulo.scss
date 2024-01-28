@@ -1,0 +1,21 @@
+
+@mixin style-banner-p{
+    font-size: 3.25rem;//50px
+}
+@mixin style-h1{
+    font-size: 1.875rem; //30px
+}
+
+
+
+/*
+
+!TODO como usar el mixin en otra parte
+
+se usa el use para llamar este mixinTitulo
+luego
+usamos el
+h1{
+    @include mixinTitulo.style-h1;
+}
+*/

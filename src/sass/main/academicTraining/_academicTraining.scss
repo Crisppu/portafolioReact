@@ -1,0 +1,171 @@
+@use '../../../sass/tools/mixins/mixinBackgroundImage';
+
+.main__academicTraining{
+    background-color: rgba(245,216,132,0.2);
+    padding-bottom: 2.5rem;
+
+    &__title{
+        color: var(--color-black);
+        padding: 2rem 0;
+        text-align: center;
+        font-size: var(--font-size-h2);
+        font-family: var(--font-family-zenKaku);
+        line-height:1.1;
+    }
+    &__spanTitle{
+        font-weight: 800;
+        font-family: var(--font-family-zen);
+
+    }
+    &__cardContainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__card{
+        width:28vw;
+        //390px:;
+        height: 34vh;
+        //250px:;
+        margin: 0.625rem;
+        border: 1px solid transparent;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__marianoGalves{
+        @include mixinBackgroundImage.background-ImageAndGradient(205,41,40,0.7,'../../../../src/assets/img/formacionAcademica/Universidad-Mariano-Campus.webp');
+    }
+    &__alura{
+        @include mixinBackgroundImage.background-ImageAndGradient(10,92,184,0.7,'../../../../src/assets/img/formacionAcademica/Alura-Campus.webp');
+    }
+    &__tecnicoEvangelico{
+        @include mixinBackgroundImage.background-ImageAndGradient(0,144,146,0.7,'../../../../src/assets/img/formacionAcademica/Liceo-tecnicoEvangelico-Campus.webp');
+    }
+
+
+
+    &__marianoGalves:hover, &__alura:hover, &__tecnicoEvangelico:hover{
+        animation:animationOpacity 0.9s cubic-bezier(0.390,0.575,0.565,1.000) both;
+        -webkit-animation:animationOpacity 0.9s cubic-bezier(0.390,0.575,0.565,1.000) both;
+        background-color: #35363B;
+        background-image: initial;
+
+    }
+
+    @keyframes animationOpacity {
+            0% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+    }
+    
+    &__titleCampus{
+        font-size: var(--font-size-h4);
+        font-family: var(--font-family-zen);
+        text-align: center;
+
+    }
+    &__itemParagraph{
+        margin-bottom: 10px;
+        text-align: justify;
+        width: 22vw;//300px;
+        font-family: var(--font-family-montserrat);
+
+    }
+    &__itemLink {
+        cursor: pointer;
+        & a{
+            display: inline-flex;
+            margin-top: 1rem;
+            color: var(--color-white);
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            font-weight: 800;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        & span{
+            transition: .3s ease;
+        }
+    }
+    &__linkCampus{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width:767px){
+    .main__academicTraining{
+        &__cardContainer{
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: initial;
+        }
+        &__card{
+            width: 350px;
+        }
+        &__marianoGalves, &__alura, &__tecnicoEvangelico{
+            pointer-events: none;
+
+        }
+        &__linkCampus{
+            display: inline-flex;
+            align-items: center;
+
+            margin-top: 1rem;
+            color: var(--color-white);
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 1.25rem;
+            gap: 0.25rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background-color: var(--color-pink);
+            width: 100px;
+            height: 50px;
+
+        }
+
+    }
+}
+@media screen and (min-width:767px) and (max-width:1024px) {
+    .main__academicTraining{
+        &__cardContainer{
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: initial;
+        }
+        &__card{
+            width: 350px;
+            height: 250px;
+        }
+        &__marianoGalves, &__alura, &__tecnicoEvangelico{
+            pointer-events: none;
+
+        }
+        &__linkCampus{
+            display: inline-flex;
+            align-items: center;
+
+            margin-top: 1rem;
+            color: var(--color-white);
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 1.25rem;
+            gap: 0.25rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background-color: var(--color-pink);
+            width: 100px;
+            height: 50px;
+
+        }
+        
+    }
+}

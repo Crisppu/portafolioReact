@@ -1,0 +1,30 @@
+
+.banner__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 2rem;
+
+
+}
+//movil
+@media screen and (max-width:767px) {
+    .banner__container{
+        padding-top: 0;
+
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+    .banner__container{
+      padding-top: 1rem;
+
+    }
+}
+@media screen and (min-width:767px) and (max-width:1024px) and (orientation:landscape) {
+    .banner__container{
+      padding-top: 34px;
+
+    }
+}

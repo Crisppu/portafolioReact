@@ -1,0 +1,31 @@
+.header__logo{
+    display: flex;
+    &__initialsName{
+        font-weight: bold;
+        font-family: var(--font-family-zen);
+        padding: 0 0 0 2rem;
+        font-size: var(--font-size-logoCY);
+    }
+}
+@media screen and (max-width:767px) {
+    .header__logo{
+        &__initialsName{
+            font-size: 2.5rem;
+        }
+
+    }
+}
+@media screen and (min-width:767px) and (max-width:1024px) {
+    .header__logo{
+        &__initialsName{
+            padding: 16px 0 0 32px;
+        }
+    }
+}
+@media screen and (min-width:767px) and (max-width:1024px) and (orientation:landscape){
+    .header__logo{
+        &__initialsName{
+            padding: 0 0 0 32px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+ @mixin background-Image($img-src) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url($img-src);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin background-ImageAndGradient($valueR,$valueG,$valueB,$valueA,$img-src) {
+    background-image: linear-gradient(rgba($valueR, $valueG, $valueB, $valueA), rgba($valueR, $valueG, $valueB, $valueA)),url($img-src);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin background-ImageOffOpacity($img-src) {
+    background-image: url($img-src);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin background-Image-moreAboutMe($img-src) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url($img-src);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}

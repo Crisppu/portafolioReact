@@ -1,0 +1,139 @@
+.main__contact {
+  display: flex;
+  justify-content: center;
+  background: var(--color-grey);
+  padding: 4rem 0 6rem 0;
+  color: var(--color-black);
+}
+.main__contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  padding: 30px 30px 30px 30px;
+  box-shadow: 10px 10px 0px var(--color-darkGray);
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.main__contact__form::before {
+  position: absolute;
+  content: "";
+  width: 22vw;
+  height: 45vh;
+  background-color: var(--color-yellow);
+  transform: rotate(45deg);
+  left: -180px;
+  z-index: 1;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+}
+.main__contact__information {
+  width: 24vw;
+  font-family: var(--font-family-montserrat);
+  z-index: 2;
+}
+.main__contact__title {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.main__contact__subTitle {
+  font-size: var(--font-size-h4);
+  z-index: 2;
+}
+.main__contact__paragraph {
+  font-size: var(--font-size-p16);
+  color: var(--color-softGray);
+}
+.main__contact__inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.main__contact__textArea {
+  resize: none;
+  border: 2px solid var(--color-softGray);
+}
+.main__contact__textArea:focus {
+  outline: none;
+  border: 2px solid rgb(199, 114, 255);
+}
+.main__contact__TextAreaContainer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.main__contact__input {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-softGray);
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.main__contact__input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(199, 114, 255);
+}
+.main__contact__input::placeholder {
+  color: rgb(80, 80, 80);
+  font-size: 1em;
+  font-weight: 500;
+}
+.main__contact__buttonSubmit {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  border: none;
+  background-color: rgb(162, 104, 255);
+  color: var(--color-white);
+  height: 4.5vh;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 10px;
+  cursor: pointer;
+}
+.main__contact__buttonSubmit:hover {
+  background-color: var(--color-pink);
+}
+
+@media screen and (max-width: 767px) {
+  .main__contact__form {
+    box-shadow: none;
+  }
+  .main__contact__form::before {
+    display: none;
+  }
+  .main__contact__information {
+    width: 300px;
+  }
+  .main__contact__buttonSubmit {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .main__contact__form {
+    width: 350px;
+  }
+  .main__contact__form::before {
+    width: 300px;
+    height: 300px;
+  }
+  .main__contact__buttonSubmit {
+    height: 50px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
