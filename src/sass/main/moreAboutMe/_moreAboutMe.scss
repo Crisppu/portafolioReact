@@ -1,7 +1,11 @@
 @use '../../tools/mixins/mixinBackgroundImage';
 
 .main__moreAboutMe {
-  @include mixinBackgroundImage.background-Image-moreAboutMe('../../../../src/assets/img/areaTrabajo.webp');
+  // @include mixinBackgroundImage.background-Image-moreAboutMe('../../../../src/assets/img/areaTrabajo.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../../../src/assets/img/areaTrabajo.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   height: 82vh; // 550px;
   display: flex;
   flex-direction: column;
