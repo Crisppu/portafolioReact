@@ -1,4 +1,4 @@
-@use '../../../sass/tools/mixins/mixinBackgroundImage';
+// @use '../../../sass/tools/mixins/mixinBackgroundImage';
 
 .main__academicTraining{
     background-color: rgba(245,216,132,0.2);
@@ -33,25 +33,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    &__marianoGalves{
-        @include mixinBackgroundImage.background-ImageAndGradient(205,41,40,0.7,'../../../../src/assets/img/formacionAcademica/Universidad-Mariano-Campus.webp');
-    }
-    &__alura{
-        @include mixinBackgroundImage.background-ImageAndGradient(10,92,184,0.7,'../../../../src/assets/img/formacionAcademica/Alura-Campus.webp');
-    }
-    &__tecnicoEvangelico{
-        @include mixinBackgroundImage.background-ImageAndGradient(0,144,146,0.7,'../../../../src/assets/img/formacionAcademica/Liceo-tecnicoEvangelico-Campus.webp');
-    }
-
-
-
-    &__marianoGalves:hover, &__alura:hover, &__tecnicoEvangelico:hover{
-        animation:animationOpacity 0.9s cubic-bezier(0.390,0.575,0.565,1.000) both;
-        -webkit-animation:animationOpacity 0.9s cubic-bezier(0.390,0.575,0.565,1.000) both;
-        background-color: #35363B;
-        background-image: initial;
-
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     @keyframes animationOpacity {

@@ -1,5 +1,7 @@
-@use '../../sass/tools/mixins/mixinBackgroundImage';
+// @use '../../sass/tools/mixins/mixinBackgroundImage';
 .specializationDetail{
-    @include mixinBackgroundImage.background-Image('../../assets/img/xp__fondo.webp');
+    // @include mixinBackgroundImage.background-Image('../../assets/img/xp__fondo.webp');
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

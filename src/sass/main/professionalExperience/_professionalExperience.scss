@@ -1,4 +1,4 @@
-@use'../../../sass/tools/mixins/mixinBackgroundImage';
+// @use'../../../sass/tools/mixins/mixinBackgroundImage';
 .main__xp{
     background: var(--color-grey);
     // color: #BD9E66;
@@ -32,7 +32,7 @@
         display: none
     }
     &__informationCard{
-        @include mixinBackgroundImage.background-ImageOffOpacity('../../../src/assets/img/backgroundImgFondos/pinturaAbstractaVioletaAzul.webp');
+        // @include mixinBackgroundImage.background-ImageOffOpacity('../../../src/assets/img/backgroundImgFondos/pinturaAbstractaVioletaAzul.webp');
 
         border-radius: 10px;
         width: 25vw;//330px;
@@ -42,6 +42,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
 
     }
@@ -122,10 +124,8 @@
         &__informationCard{
             width: 300px;
             height: 250px;
-            background-image: none;
         }
         &__detailsCard{
-            background-color: var(--color-softGray);
             border-radius: 5%;
         }
         &__linkRepository, &__linkDemo{
@@ -162,13 +162,11 @@
         &__informationCard{
             width: 350px;
             height: 250px;
-            background-image: none;
         }
         &__detailsCard{
-            background-color: var(--color-softGray);
             border-radius: 5%;
-            width: 90%;
-            height: 90%;
+            width: 80%;
+            height: 80%;
         }
         &__linkRepository, &__linkDemo{
             justify-content: center;

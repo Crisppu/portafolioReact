@@ -1,5 +1,6 @@
 import imgCalculadora from '../../../../../src/assets/img/xp/imgCalculadora.png';
 import imgAhorcado from '../../../../../src/assets/img/xp/ahorcado__app.png'
+import fondoBackground from '../../../../../src/assets/img/backgroundImgFondos/pinturaAbstractaVioletaAzul.webp';
 import {useEffect, useRef, useState} from 'react';
 const ProfessionalExperience = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -38,17 +39,15 @@ const ProfessionalExperience = () => {
     const cardsList = [
         {   title:'Calculadora',
             subTitle:'Challenge Personal',
-            containerStyle:{backgroundColor:'#80DEEA'},
             image: imgCalculadora,
             linkRepositoryGithub:'https://github.com/Crisppu/calculadora.git',
-            linkDemo:'https://crisppu.github.io/calculadora/'
+            linkDemo:'https://crisppu.github.io/calculadora/',
         },
         {   title:'Juego Del Ahorcado',
             subTitle:'Challenge Alura',
-            containerStyle:{backgroundColor:'#80DEEA'},
             image: imgAhorcado,
             linkRepositoryGithub:'https://github.com/Crisppu/ahorcadoAlura.git',
-            linkDemo:'https://crisppu.github.io/ahorcadoAlura/'
+            linkDemo:'https://crisppu.github.io/ahorcadoAlura/',
         },
     ];
     return (
@@ -70,7 +69,7 @@ const ProfessionalExperience = () => {
                                 }
                                 <img className='main__xp__imgCardActive' src={card.image}/>
                                 </div>
-                                <div className='main__xp__informationCard'>
+                                <div className='main__xp__informationCard' style={{backgroundImage:`url(${fondoBackground})`}} >
                                     <div className='main__xp__detailsCard'>
                                         <h3 className='main__xp__titleCard'>{card.title}</h3>
                                         <h4 className='main__xp__subTitleCard'>{card.subTitle}</h4>

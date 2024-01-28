@@ -3,10 +3,9 @@
 }
 
 .specializationDetail {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../src/assets/img/xp__fondo.webp");
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 .header__container {
@@ -381,10 +380,6 @@
   }
 }
 .main__moreAboutMe {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../../src/assets/img/areaTrabajo.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 82vh;
   display: flex;
   flex-direction: column;
@@ -558,27 +553,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.main__academicTraining__marianoGalves {
-  background-image: linear-gradient(rgba(205, 41, 40, 0.7), rgba(205, 41, 40, 0.7)), url("../../../../src/assets/img/formacionAcademica/Universidad-Mariano-Campus.webp");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.main__academicTraining__alura {
-  background-image: linear-gradient(rgba(10, 92, 184, 0.7), rgba(10, 92, 184, 0.7)), url("../../../../src/assets/img/formacionAcademica/Alura-Campus.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.main__academicTraining__tecnicoEvangelico {
-  background-image: linear-gradient(rgba(0, 144, 146, 0.7), rgba(0, 144, 146, 0.7)), url("../../../../src/assets/img/formacionAcademica/Liceo-tecnicoEvangelico-Campus.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.main__academicTraining__marianoGalves:hover, .main__academicTraining__alura:hover, .main__academicTraining__tecnicoEvangelico:hover {
-  animation: animationOpacity 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation: animationOpacity 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  background-color: #35363B;
-  background-image: initial;
 }
 @keyframes animationOpacity {
   0% {
@@ -708,9 +684,6 @@
   display: none;
 }
 .main__xp__informationCard {
-  background-image: url("../../../src/assets/img/backgroundImgFondos/pinturaAbstractaVioletaAzul.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 10px;
   width: 25vw;
   height: 28vh;
@@ -719,6 +692,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .main__xp__detailsCard {
   display: flex;
@@ -788,10 +763,8 @@
   .main__xp__informationCard {
     width: 300px;
     height: 250px;
-    background-image: none;
   }
   .main__xp__detailsCard {
-    background-color: var(--color-softGray);
     border-radius: 5%;
   }
   .main__xp__linkRepository, .main__xp__linkDemo {
@@ -825,13 +798,11 @@
   .main__xp__informationCard {
     width: 350px;
     height: 250px;
-    background-image: none;
   }
   .main__xp__detailsCard {
-    background-color: var(--color-softGray);
     border-radius: 5%;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
   }
   .main__xp__linkRepository, .main__xp__linkDemo {
     justify-content: center;
