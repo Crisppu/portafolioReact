@@ -278,7 +278,8 @@
     height: 10vh;
   }
   .banner__presentation__itemIcono {
-    width: 15vw;
+    width: 65px;
+    height: 65px;
   }
   .banner__presentation__titleIcono {
     display: none;
