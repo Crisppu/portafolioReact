@@ -46,7 +46,6 @@ const NavBar = () => {
 
 
     const functionOverFlow = ()=>{
-        console.log(anchoPantalla)
 
         if(anchoPantalla < 767 && top){
             return (<style>{`body{  overflow-y: hidden;}`}</style>)
